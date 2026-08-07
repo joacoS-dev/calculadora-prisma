@@ -6,11 +6,18 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 
 public class InterpreterTest {
-    
+
     @Test
-    void powAndSqrt(){
-        Interpreter i= new Interpreter();
-        List<String> expression = new ArrayList<>(List.of("22", "*", "4", "+", "2", "^", "3","+","#","9"));
-        assertEquals(List.of("22", "*", "4", "+","8.0","+","#","9"),i.resolvePowAndSqrt(expression));
+    void shuntingYard(){
+        Interpreter interpreter= new Interpreter();
+        List<String> expression= List.of("3","+","2","*","6","-","4","/","2","+","#","9");
+        assertEquals(List.of("3","2","6","*","+","4","2","/","-","9","#","+"), interpreter.shuntingYard(expression));
+    }
+
+    @Test
+    void shutingYardParenthesis(){
+        Interpreter interpreter= new Interpreter();
+        List<String> expression= List.of("3","+","2","*","6","/","(","3","+","2",")","+","1");
+        assertEquals(List.of("3","2","6","*","3","2","+","/","+","1","+"),interpreter.shuntingYard(expression));
     }
 }
