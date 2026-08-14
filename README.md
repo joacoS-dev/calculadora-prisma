@@ -1,18 +1,19 @@
-## conseguir api key aca=
+## Hola humano!
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to the Code Java world. Here is a guideline to help you bla bla bla.
 
-## Folder Structure
+## Documentación tecnica de elevada complejidad.
 
-The workspace contains two folders by default, where:
+###Requisitos previso
+1. Tener Java 17 o más.
+2. Tener maven.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+###Como usar
+1. Conseguir tu api key registrandote en https://newsapi.org.
+2. Pegar tu api key en la variable PASTE_API_KEY, dentro de httpservice.java
+3. Asignar tu nombre en la variable ASSIGN_A_NAME, dentro de App.java
+4. Ejecutar con mvn exec:java
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+###Que puedo hacer
+1. Resolver expresiónes aritméticas a la velocidad de la luz sin necesidad de usar una interfaz(una que no sea de comandos) como una calculadora normal.
+2. Buscar noticias de ciencia con el comando "news".

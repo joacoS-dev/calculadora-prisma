@@ -3,11 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Interpreter{
-   
+public class Interpreter{  
     Calculator calculator= new Calculator();
     Tokenizer tokenizer= new Tokenizer();
-
+    
     public Double calculatExpression(String expression){
         List<String> tokenizedExpression= tokenizer.tokenizeExpression(expression);
         List<String> orderedExpression= shuntingYard(tokenizedExpression);

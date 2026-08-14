@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tokenizer {
-    
     public List<String> tokenizeExpression(String expression){
         List<String> result = new ArrayList<>();
         StringBuilder actualToken = new StringBuilder();

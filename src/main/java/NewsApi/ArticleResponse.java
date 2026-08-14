@@ -1,7 +1,5 @@
 package NewsApi;
-
 import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -10,7 +8,6 @@ public class ArticleResponse{
     public String toString() {
         return "ArticleResponse [status=" + status + ", totalResults=" + totalResults + ", articles=" + articles + "]";
     }
-
     private String status;
     private int totalResults;
     private List<Article> articles;

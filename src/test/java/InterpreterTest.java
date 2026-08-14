@@ -60,6 +60,16 @@ public class InterpreterTest {
     } 
 
     @Test
+    void calculateNegativeNumberExpression(){
+        Tokenizer tokenizer= new Tokenizer();
+        Interpreter interpreter= new Interpreter();
+        Calculator calculator= new Calculator();
+
+        String expression= "10*(-2)+(-2)";
+        Double calculatedExpression= interpreter.calculatExpression(expression);
+        assertEquals(-22, calculatedExpression);
+    }
+    @Test
     void quickTest(){
         Tokenizer tokenizer= new Tokenizer();
         Interpreter interpreter= new Interpreter();
